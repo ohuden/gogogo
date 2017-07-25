@@ -7,7 +7,7 @@ import "fmt"
 //func main( /*some input parameters(имя тип, имя тип)*/ ) /*type of the returned value "float64"*/ { //arguments+ returned value are signature of function
 //some body
 //}
-/*
+
 func f() {
 	fmt.Println(x) //undefined
 }
@@ -15,8 +15,7 @@ func main() {
 	x := 5
 	f()
 }
-*/
-/*
+
 func f(x int) {
 	fmt.Println(x)
 }
@@ -24,11 +23,10 @@ func main() {
 	x := 5
 	f(x)
 }
-*/
 
 //Стек вызовов
 //Каждая вызываемая функция помещается в стек вызовов, каждый возврат из функции возвращает нас к предыдущей приостановленной подпрограмме;
-/*
+
 func main() {
 	fmt.Println(f1())
 }
@@ -39,18 +37,17 @@ func f2() (r int) {
 	r = 1
 	return
 }
-*/
+
 //retun multiple values
-/*
+
 func f() (int, int) {
-    return 5, 6
+	return 5, 6
 }
 
 func main() {
-    x, y := f()
+	x, y := f()
 }
-*/
-/*
+
 func add(args ...int) int { //Использование ... перед типом последнего аргумента означает, что функция может содержать ноль и более таких параметров. ей можно передать любое количество аргументов типа int.
 	total := 0
 	for _, v := range args {
@@ -61,7 +58,6 @@ func add(args ...int) int { //Использование ... перед типо
 func main() {
 	fmt.Println(add(1, 2, 3))
 }
-*/
 
 //Closures
 
