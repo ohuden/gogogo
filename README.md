@@ -1,12 +1,12 @@
 1. Go Language  
 
-    Basic data types: integers, floating-point, strings, unicode character representation, complex numbers, booleans, constants	'2 (ch. 3)'
+    Basic data types: integers, floating-point, strings, unicode character representation, complex numbers, booleans, constants	`2 (ch. 3)`
     
-    Composite types: Arrays, Slices, Maps, Chan, Structs, iota usage '2 (ch. 4)	'
+    Composite types: Arrays, Slices, Maps, Chan, Structs, iota usage `2 (ch. 4)`
     
-    Functions: Declaration, Recursion, Variadic functions, Error handling, Panic and recover, Named result parameters, Multiple retrun values	'2 (ch. 5)'
+    Functions: Declaration, Recursion, Variadic functions, Error handling, Panic and recover, Named result parameters, Multiple retrun values	`2 (ch. 5)`
     
-    Interfaces: Interface as Contract, as Types, Interface Satisfaction	'2 (ch. 7)'	
+    Interfaces: Interface as Contract, as Types, Interface Satisfaction	`2 (ch. 7)`	
     
     Methods: Declaration, Values and expressions `2 (ch. 6)`
     
