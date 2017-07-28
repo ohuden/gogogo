@@ -1,17 +1,23 @@
 //Basic data types in Go
 
 1. Integers:
-	signed integer:
+
+	1) signed integer:
 		int, int8, int16, int32, int64
-	unsigned integers:
+
+	2) unsigned integers:
 		uint, uint8, uint16, uint32, uint64
-2. Float:
+
+2. Floating point:
 	float32, float64
-	Complex:
+
+	1) Complex:
 		complex64, complex128
 
-3. String
-4. Logical types
+3. Strings
+4. Booleans
+5. Constants
+6. Logical types
 		&& И
 		|| ИЛИ
 		! НЕ
