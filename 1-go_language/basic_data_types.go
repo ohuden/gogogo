@@ -16,26 +16,30 @@
 	rune alias for int32
 
 2. Floating point:
-	float32, float64 //info size and representation
+	float32, float64 // info size and representation
 
 	1) Complex:
 		complex64, complex128
 
-3. Strings //array of bytes
+3. Strings // array of bytes
 	string
 4. Booleans
-	bool
+	bool // true false
 5. Constants
 	const
+	
+	const Hello = "hello" // can be exported out of package
+	const hello = "hello" // can't be exported out of package
+
 6. Logical types
 		&& И
 		|| ИЛИ
 		! НЕ
 
 func main() {
-	fmt.Println(true && true) 	//true
-	fmt.Println(true && false) 	//false
-	fmt.Println(true || true)	//true
-	fmt.Println(true || false)	//true
-	fmt.Println(!true)			//false
+	fmt.Println(true && true) 	// true
+	fmt.Println(true && false) 	// false
+	fmt.Println(true || true)	// true
+	fmt.Println(true || false)	// true
+	fmt.Println(!true)			// false
 }
