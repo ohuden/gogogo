@@ -48,6 +48,10 @@ func sumMore(stuff ...int) (res int)  {
 
 //Error handling
 
+type error interface {
+	Error() string
+}
+
 if err != nil {
 	fmt.Println("handles an error here")
 }
