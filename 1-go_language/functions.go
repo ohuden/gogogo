@@ -52,6 +52,21 @@ type error interface {
 	Error() string
 }
 
+type MyError struct {
+	Msg string
+	File string
+	Line int
+}
+
+switch err:=err.(type) {
+	case nil:
+		//call succeeded, nothing to do
+	case *MyError:
+		 fmt.Println("error occured on line:", err.Line)
+	default:
+		//unknown error
+}
+
 if err != nil {
 	fmt.Println("handles an error here")
 }
