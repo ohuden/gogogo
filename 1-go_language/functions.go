@@ -9,13 +9,6 @@ func sumLight(i, j int) int {
 	return i + j
 }
 
-//для получения произвольного списка однотипный значений
-func sumMore(stuff ...int) (res int)  {
-	for i := range stuff {
-		res += stuff[i]
-	}
-	return
-}
 //Будет выполнена во время начала исполнения программы
 var stuff = "not ready" 
 
@@ -27,27 +20,57 @@ func main() {
 	fmt.Println(stuff) //ready
 }
 
-//Recursion
+//Recursion - expensive in terms of resources
+
+func factorial(x uint) uint{
+	if x == 0 {
+		return 1
+	}
+	return x * factorial(x-1)
+}
+
+func main() {
+	fmt.Println(factorial(4))
+}
+
 //Variadic functions
-//Error handling
-//Panic and recover
-//Named result parameters
 
+func main() {
+	sumMore(4, 8, 7, 4, 6, 7) //we can pass as many arguments as we want
+}
 
-//Multiple retrun values
-
-
-//возврат нескольких значений
-func sumOnlyNatural(stuff ...int) (int, error)  {
-	res := 0
+func sumMore(stuff ...int) (res int)  {
 	for i := range stuff {
-		if stuff[i] < 0 {
-			return 0, fmt.Errorf("Only natural numbers expected - given %d", stuff[i])
-		}
 		res += stuff[i]
 	}
-	return res, nil
+	return
 }
+
+//Error handling
+
+if err != nil {
+	fmt.Println("handles an error here")
+}
+
+//Panic and recover
+
+//go doesnt have exeptions
+
+panic("Panic") //current function stops
+
+//check if panic occured
+if r := recover(); r != nil {
+	if err, ok := r.(error); ok {
+		fmt.Println()
+	}
+	fmt.Println("Panic deferred")
+}
+
+r := recover()
+
+defer //can be used to handle errors when panic is used
+
+//Named result parameters
 
 //возврат нескольких именованых значений
 func sumOnlyNatural(stuff ...int) (res int, err error)  {
@@ -59,4 +82,18 @@ func sumOnlyNatural(stuff ...int) (res int, err error)  {
 		res += stuff[i]
 	}
 	return res, err
+}
+
+//Multiple retrun values
+
+//возврат нескольких значений
+func sumOnlyNatural(stuff ...int) (int, error)  {
+	res := 0
+	for i := range stuff {
+		if stuff[i] < 0 {
+			return 0, fmt.Errorf("Only natural numbers expected - given %d", stuff[i])
+		}
+		res += stuff[i]
+	}
+	return res, nil
 }
