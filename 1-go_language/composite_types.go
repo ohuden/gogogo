@@ -174,7 +174,7 @@ c := make(chan int, 1)
 туда ещё одно до тех пор, пока первое не будет получено.
 */
 
-//Structs
+//Structs https://www.youtube.com/watch?v=8Rg4bOn9Qds
 //====================================================
 
 type Circle struct {

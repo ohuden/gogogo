@@ -21,7 +21,7 @@
 	1) Complex:
 		complex64, complex128
 
-3. Strings // array of bytes
+3. Strings // array of bytes https://www.youtube.com/watch?v=XIuYEhTQ9GY
 	string
 4. Booleans
 	bool // true false
@@ -31,7 +31,7 @@
 	const Hello = "hello" // can be exported out of package
 	const hello = "hello" // can't be exported out of package
 
-6. Logical types
+6. Logical types //https://www.youtube.com/watch?v=_0hZYMWenz4
 		&& И
 		|| ИЛИ
 		! НЕ

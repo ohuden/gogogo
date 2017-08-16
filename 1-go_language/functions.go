@@ -1,4 +1,4 @@
-//Declaration
+//Declaration https://www.youtube.com/watch?v=YWCQrsnLi9E
 
 func имяФункции ([список параметров]) [возвращаемые значения] {
 	тело функции
